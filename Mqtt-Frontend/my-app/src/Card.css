@@ -1,0 +1,24 @@
+/* Card.css */
+
+.card {
+    background: #ffffff; /* Fondo blanco para las tarjetas */
+    border-radius: 15px; /* Bordes más redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra más prominente */
+    padding: 20px;
+    margin: 15px;
+    width: 90%; /* Uso de porcentaje para responsividad */
+    max-width: 350px; /* Ancho máximo para las tarjetas */
+    text-align: center; /* Centrar el texto dentro de las tarjetas */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transición suave */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra más fuerte en hover */
+  }
+  
+  .loading {
+    font-style: italic; /* Estilo de texto en cursiva para mensajes de carga */
+    color: #888; /* Color gris para el texto de carga */
+  }
+  

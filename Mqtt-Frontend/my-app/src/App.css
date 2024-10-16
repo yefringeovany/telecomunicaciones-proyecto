@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e7f3fe;
+  font-family: 'Arial', sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 15px;
+  width: 90%;
+  max-width: 350px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  color: #007BFF;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+p {
+  margin: 10px 0;
+  color: #555;
+  font-size: 1.1em;
+}
+
+.loading {
+  font-style: italic;
+  color: #888;
+}
+
+.bomba-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.bomba-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.bomba-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.bomba-status {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilos para la notificación */
+.notification {
+  position: fixed; /* Para que esté fija en la parte superior */
+  top: 20px; /* Espacio desde el top */
+  left: 50%; /* Centrado horizontal */
+  transform: translateX(-50%); /* Ajustar el centro */
+  background-color: #f44336; /* Color de fondo de la alerta */
+  color: white; /* Color del texto */
+  padding: 15px 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+  z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+  transition: opacity 0.5s ease, top 0.5s ease; /* Transiciones suaves */
+  opacity: 1; /* Opacidad inicial */
+}
+
+.notification.hide {
+  opacity: 0; /* Cuando se oculta */
+  top: 0; /* Mover hacia arriba para ocultar */
+}
